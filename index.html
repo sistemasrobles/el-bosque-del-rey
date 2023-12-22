@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Bosque del Rey - Grupo Robles & Yasikov</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="shortcut icon" href="img/ico.ico">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css?v=332434438">
+<link rel="stylesheet" href="style2.css?v=123">
+<link rel="stylesheet" href="preload.css">
+
+
+<style type="text/css">
+  
+
+.map-360-back{
+
+position: fixed;
+  margin-top: 180px;
+  margin-right: 5px;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+ background-color: rgba(5, 160, 125, 0.8);
+  padding: 0px;
+  border-radius: 6%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+ 
+
+
+}
+
+.map-360-back >a{
+
+color:white !important;display: block !important;text-align: center;
+
+}
+
+
+@media (max-width:768px) {
+  
+  .map-360-back {
+
+     margin-top: 60px;
+    
+  }
+
+
+}
+
+</style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+</head>
+<body class="multiple-scenes view-control-buttons">
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<div id="pano"></div>
+
+<div id="sceneList" class="contenedor">
+    
+    
+     <div class="map-360-desc">
+   
+
+    
+
+
+     <img src="img/bosque-rey.png" alt="" class="img-fluid p-2" >
+
+    </div>
+    
+    
+     <div class="map-360-back" >
+   
+      
+
+      
+    </div>
+    
+<div class="map-360">
+   
+
+    
+      <i class="fas fa-chevron-up to-open"></i>
+      <h5><img class="here-icon-2" src="img/icon2.png" alt=""> &nbsp; <span>Conoce tu ubicación</span></h5>
+      <figure>
+        <img class="here-icon" src="img/icon2.png" alt="">
+        
+      </figure>
+
+      <div class="zoom p-1">
+        <img width="100%" src="img/mini-mapa.png" alt=""  height="190">
+      </div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <img src="img/lote-disponible.svg" alt="">
+          <span>Disponible</span>
+        </div>
+       
+        <div class="legend-item">
+          <img src="img/lote-vendido.svg" alt="">
+          <span>Vendido</span>
+        </div>
+     
+      </div>
+    </div>
+
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-vista-general">
+        <li class="text"><i class="fas fa-eye mr-1"></i>Vista Panor&aacute;mica</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-ingreso">
+        <li class="text"><i class="fas fa-door-open mr-1"></i>Ingreso</li>
+      </a>
+      
+
+
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed btn-resize" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Lotes</button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              
+
+
+
+               <a href="javascript:void(0)" class="scene" data-id="2-nivel-1">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #1</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="3-nivel-2">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #2</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="4-nivel-3">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #3</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="5-nivel-4">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #4</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="6-nivel-5">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #5</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="7-nivel-6">
+                <li class="text"><i class="fas fa-map-marker-alt mr-2"></i>Nivel #6</li>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed btn-resize" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+               &Aacute;reas</button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+
+              <a href="javascript:void(0)" class="scene" data-id="8-zona-comun">
+                <li class="text"><i class="fas fa-child mr-2"></i>Zona Comun</li>
+              </a>
+            
+              <a href="javascript:void(0)" class="scene" data-id="9-mirador">
+                <li class="text"><i class="fas fa-binoculars mr-1"></i>Mirador</li>
+              </a>
+                    
+
+            
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+     
+    
+     
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      document.querySelector("body").classList.add("loaded");
+  }, 20)
+});
+</script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+
+
+
+<script src="assets/jquery-3.6.0.min.js"></script> 
+<script src="assets/popper.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+
+
+
+<script src="index.js?v=2123534"></script>
+
+</body>
+</html>
